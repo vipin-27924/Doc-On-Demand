@@ -1,0 +1,159 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-image: url(https://wallpapercave.com/wp/wp2386748.jpg);
+  background-size: cover;
+ 
+}
+#logo{
+  padding: 30px 60px;
+   height: 100%;
+   width: 20%;
+   font-size: 30px;
+   color: aliceblue;
+   
+ }
+ #nav{
+   background-color: black;
+   height: 100px;
+   width: 100%;
+   display: flex;
+ }
+ #navcontents{
+   font-size: x-large;
+   text-transform: capitalize;
+   padding-top: 35px;
+   width: 68%;
+   justify-content: space-evenly;
+   display: flex;
+   color: aliceblue;
+ }
+ #navcontents{
+   font-size: x-large;
+   text-transform: capitalize;
+   padding-top: 10px;
+   width: 68%;
+   justify-content: space-evenly;
+   display: flex;
+ }
+ #navcontents h5:hover{
+ 
+   cursor: pointer;
+ }
+ #appoint{
+   width: 12%;
+   padding-top: 18px;
+ }
+ 
+ #appoint button{
+   padding-top: 30px;
+   width: 220px;
+   height: 60px;
+   font-size: larger;
+   font-weight: 400;
+   border-radius: 50px;
+   padding: 10px 30px;
+   border:none;
+ }
+ #appoint button a{
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   
+  
+ }
+ #appoint button:hover{
+   padding-top: 30px;
+   width: 220px;
+   height: 60px;
+   font-size: larger;
+   font-weight: 400;
+   border-radius: 50px;
+   padding: 10px 30px;
+   border:none;
+   cursor: pointer;
+ }
+ a{
+   text-decoration: none;
+   color: aliceblue;
+ }
+
+header {
+  background-color: #2471a8;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.blog-post {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, );
+  width: 300px;
+  margin: 15px;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-post::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  z-index: 0;
+}
+
+.blog-post-content {
+  position: relative;
+  z-index: 1;
+}
+
+.blog-post h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.blog-post p {
+  color: #eee;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+#foot{
+  padding-top: 600px;
+}
+
+
+
+

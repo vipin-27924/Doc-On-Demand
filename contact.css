@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+ 
+}
+#logo{
+  padding: 30px 60px;
+   height: 100%;
+   width: 20%;
+   font-size: 30px;
+   color: aliceblue;
+   
+ }
+ #nav{
+   background-color: black;
+   height: 100px;
+   width: 100%;
+   display: flex;
+ }
+ #navcontents{
+   font-size: x-large;
+   text-transform: capitalize;
+   padding-top: 35px;
+   width: 68%;
+   justify-content: space-evenly;
+   display: flex;
+   color: aliceblue;
+ }
+ #navcontents{
+   font-size: x-large;
+   text-transform: capitalize;
+   padding-top: 35px;
+   width: 68%;
+   justify-content: space-evenly;
+   display: flex;
+ }
+ #navcontents h5:hover{
+ 
+   cursor: pointer;
+ }
+ #appoint{
+   width: 12%;
+   padding-top: 18px;
+ }
+ 
+ #appoint button{
+   padding-top: 30px;
+   width: 220px;
+   height: 60px;
+   font-size: larger;
+   font-weight: 400;
+   border-radius: 50px;
+   padding: 10px 30px;
+   border:none;
+ }
+ #appoint button a{
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   
+  
+ }
+ #appoint button:hover{
+   padding-top: 30px;
+   width: 220px;
+   height: 60px;
+   font-size: larger;
+   font-weight: 400;
+   border-radius: 50px;
+   padding: 10px 30px;
+   border:none;
+   cursor: pointer;
+ }
+ a{
+   text-decoration: none;
+   color: aliceblue;
+ }
+
+.header {
+  text-align: center;
+  background-color: #0077cc;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.header h1 {
+  font-size: 2.5em;
+}
+
+.header p {
+  font-size: 1.2em;
+}
+
+.contact-info, .contact-form-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-image: url(https://t3.ftcdn.net/jpg/01/95/18/00/360_F_195180025_Yq3C0tsDJ0CCSol0mvy0Wsa3farQGwme.jpg);
+  background-size: cover;
+}
+
+#main-main-body{
+  background-size: cover;
+  background-image: url(https://t3.ftcdn.net/jpg/01/95/18/00/360_F_195180025_Yq3C0tsDJ0CCSol0mvy0Wsa3farQGwme.jpg);
+}
+.contact-info h2, .contact-form-section h2 {
+  color: #0077cc;
+  margin-bottom: 15px;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-section label {
+  margin-bottom: 5px;
+}
+
+.contact-form-section input, .contact-form-section textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-form-section button {
+  padding: 10px;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form-section button:hover {
+  background-color: #005fa3;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000000;
+  color: #fff;
+  margin-top: 40px;
+}

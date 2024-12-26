@@ -1,0 +1,1548 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4; /* Soft light gray background */
+  color: #333; /* Dark gray for text */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation Bar */
+#logo {
+  padding: 30px 60px;
+  height: 100%;
+  width: 20%;
+  font-size: 30px;
+  color: #ffffff; /* White text for logo */
+}
+
+#nav {
+  background-color: #00695c; /* Deep teal for calm, professional look */
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: relative;
+}
+
+#navcontents {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  display: flex;
+  gap: 30px;
+}
+
+#navcontents h5 {
+  color: #ffffff; /* White color for menu items */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#navcontents h5:hover {
+  color: #80cbc4;  /* Soft teal hover effect */
+  transform: translateY(-5px);
+}
+
+#appoint {
+  width: 20%;
+}
+
+#appoint button {
+  padding: 10px 30px;
+  width: 220px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 30px;
+  background-color: #80cbc4; /* Soft teal for buttons */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+#appoint button:hover {
+  transform: translateY(-5px);
+  background-color: #4db6ac;  /* Darker teal for hover */
+}
+
+/* Main Content Section */
+#main-content-about {
+  background-image: url('https://t3.ftcdn.net/jpg/01/95/18/00/360_F_195180025_Yq3C0tsDJ0CCSol0mvy0Wsa3farQGwme.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.header {
+  background-color: #00695c; /* Deep teal for header */
+  color: #ffffff; /* White text */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.about-us {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for content */
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333; /* Dark text for headings */
+}
+
+.about-us p, .about-us ul {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555; /* Slightly lighter color for paragraphs */
+}
+
+.about-us ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about-us li {
+  margin-bottom: 10px;
+}
+
+.about-us a {
+  color: #80cbc4; /* Soft teal for links */
+  text-decoration: none;
+}
+
+.about-us a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #00695c;  /* Deep teal footer */
+  color: #ffffff;  /* White text in footer */
+  margin-top: 40px;
+}
+
+/* 3D Effects for Button */
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Responsive Design - Mobile and Tablet Breakpoints */
+
+/* Tablets (1024px and below) */
+@media (max-width: 1024px) {
+  #navcontents {
+    font-size: 1.1rem;
+  }
+
+  #appoint button {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-us {
+    max-width: 90%;
+  }
+}
+
+/* Mobile Devices (768px and below) */
+@media (max-width: 768px) {
+  #navcontents {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+    gap: 15px;
+  }
+
+  #appoint {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .about-us {
+    max-width: 95%;
+  }
+
+  #appoint button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  #logo {
+    font-size: 24px;
+  }
+}
+
+/* Very Small Screens (480px and below) */
+@media (max-width: 480px) {
+  #navcontents {
+    font-size: 0.9rem;
+    gap: 10px;
+  }
+
+  #logo {
+    font-size: 22px;
+  }
+
+  #nav {
+    padding: 0 10px;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-us {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  #appoint button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+}
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4; /* Soft light gray background */
+  color: #333; /* Dark gray for text */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation Bar */
+#logo {
+  padding: 30px 60px;
+  height: 100%;
+  width: 20%;
+  font-size: 30px;
+  color: #ffffff; /* White text for logo */
+}
+
+#nav {
+  background-color: #00695c; /* Deep teal for calm, professional look */
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: relative;
+}
+
+#navcontents {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  display: flex;
+  gap: 30px;
+}
+
+#navcontents h5 {
+  color: #ffffff; /* White color for menu items */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#navcontents h5:hover {
+  color: #80cbc4;  /* Soft teal hover effect */
+  transform: translateY(-5px);
+}
+
+#appoint {
+  width: 20%;
+}
+
+#appoint button {
+  padding: 10px 30px;
+  width: 220px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 30px;
+  background-color: #80cbc4; /* Soft teal for buttons */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+#appoint button:hover {
+  transform: translateY(-5px);
+  background-color: #4db6ac;  /* Darker teal for hover */
+}
+
+/* Main Content Section */
+#main-content-about {
+  background-image: url('https://t3.ftcdn.net/jpg/01/95/18/00/360_F_195180025_Yq3C0tsDJ0CCSol0mvy0Wsa3farQGwme.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.header {
+  background-color: #00695c; /* Deep teal for header */
+  color: #ffffff; /* White text */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.about-us {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for content */
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333; /* Dark text for headings */
+}
+
+.about-us p, .about-us ul {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555; /* Slightly lighter color for paragraphs */
+}
+
+.about-us ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about-us li {
+  margin-bottom: 10px;
+}
+
+.about-us a {
+  color: #80cbc4; /* Soft teal for links */
+  text-decoration: none;
+}
+
+.about-us a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #00695c;  /* Deep teal footer */
+  color: #ffffff;  /* White text in footer */
+  margin-top: 40px;
+}
+
+/* 3D Effects for Button */
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Responsive Design - Mobile and Tablet Breakpoints */
+
+/* Tablets (1024px and below) */
+@media (max-width: 1024px) {
+  #navcontents {
+    font-size: 1.1rem;
+  }
+
+  #appoint button {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-us {
+    max-width: 90%;
+  }
+}
+
+/* Mobile Devices (768px and below) */
+@media (max-width: 768px) {
+  #navcontents {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+    gap: 15px;
+  }
+
+  #appoint {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .about-us {
+    max-width: 95%;
+  }
+
+  #appoint button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  #logo {
+    font-size: 24px;
+  }
+}
+
+/* Very Small Screens (480px and below) */
+@media (max-width: 480px) {
+  #navcontents {
+    font-size: 0.9rem;
+    gap: 10px;
+  }
+
+  #logo {
+    font-size: 22px;
+  }
+
+  #nav {
+    padding: 0 10px;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-us {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  #appoint button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+}
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4; /* Soft light gray background */
+  color: #333; /* Dark gray for text */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation Bar */
+#logo {
+  padding: 30px 60px;
+  height: 100%;
+  width: 20%;
+  font-size: 30px;
+  color: #ffffff; /* White text for logo */
+}
+
+#nav {
+  background-color: #00695c; /* Deep teal for calm, professional look */
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: relative;
+}
+
+#navcontents {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  display: flex;
+  gap: 30px;
+}
+
+#navcontents h5 {
+  color: #ffffff; /* White color for menu items */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#navcontents h5:hover {
+  color: #80cbc4;  /* Soft teal hover effect */
+  transform: translateY(-5px);
+}
+
+#appoint {
+  width: 20%;
+}
+
+#appoint button {
+  padding: 10px 30px;
+  width: 220px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 30px;
+  background-color: #80cbc4; /* Soft teal for buttons */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+#appoint button:hover {
+  transform: translateY(-5px);
+  background-color: #4db6ac;  /* Darker teal for hover */
+}
+
+/* Main Content Section */
+#main-content-about {
+  background-image: url('https://t3.ftcdn.net/jpg/01/95/18/00/360_F_195180025_Yq3C0tsDJ0CCSol0mvy0Wsa3farQGwme.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.header {
+  background-color: #00695c; /* Deep teal for header */
+  color: #ffffff; /* White text */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.about-us {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for content */
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333; /* Dark text for headings */
+}
+
+.about-us p, .about-us ul {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555; /* Slightly lighter color for paragraphs */
+}
+
+.about-us ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about-us li {
+  margin-bottom: 10px;
+}
+
+.about-us a {
+  color: #80cbc4; /* Soft teal for links */
+  text-decoration: none;
+}
+
+.about-us a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #00695c;  /* Deep teal footer */
+  color: #ffffff;  /* White text in footer */
+  margin-top: 40px;
+}
+
+/* 3D Effects for Button */
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Responsive Design - Mobile and Tablet Breakpoints */
+
+/* Tablets (1024px and below) */
+@media (max-width: 1024px) {
+  #navcontents {
+    font-size: 1.1rem;
+  }
+
+  #appoint button {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-us {
+    max-width: 90%;
+  }
+}
+
+/* Mobile Devices (768px and below) */
+@media (max-width: 768px) {
+  #navcontents {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+    gap: 15px;
+  }
+
+  #appoint {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .about-us {
+    max-width: 95%;
+  }
+
+  #appoint button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  #logo {
+    font-size: 24px;
+  }
+}
+
+/* Very Small Screens (480px and below) */
+@media (max-width: 480px) {
+  #navcontents {
+    font-size: 0.9rem;
+    gap: 10px;
+  }
+
+  #logo {
+    font-size: 22px;
+  }
+
+  #nav {
+    padding: 0 10px;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-us {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  #appoint button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+}
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4; /* Soft light gray background */
+  color: #333; /* Dark gray for text */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation Bar */
+#logo {
+  padding: 30px 60px;
+  height: 100%;
+  width: 20%;
+  font-size: 30px;
+  color: #ffffff; /* White text for logo */
+}
+
+#nav {
+  background-color: #00695c; /* Deep teal for calm, professional look */
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: relative;
+}
+
+#navcontents {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  display: flex;
+  gap: 30px;
+}
+
+#navcontents h5 {
+  color: #ffffff; /* White color for menu items */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#navcontents h5:hover {
+  color: #80cbc4;  /* Soft teal hover effect */
+  transform: translateY(-5px);
+}
+
+#appoint {
+  width: 20%;
+}
+
+#appoint button {
+  padding: 10px 30px;
+  width: 220px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 30px;
+  background-color: #80cbc4; /* Soft teal for buttons */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+#appoint button:hover {
+  transform: translateY(-5px);
+  background-color: #4db6ac;  /* Darker teal for hover */
+}
+
+/* Main Content Section */
+#main-content-about {
+  background-image: url('https://t3.ftcdn.net/jpg/01/95/18/00/360_F_195180025_Yq3C0tsDJ0CCSol0mvy0Wsa3farQGwme.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.header {
+  background-color: #00695c; /* Deep teal for header */
+  color: #ffffff; /* White text */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.about-us {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for content */
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333; /* Dark text for headings */
+}
+
+.about-us p, .about-us ul {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555; /* Slightly lighter color for paragraphs */
+}
+
+.about-us ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about-us li {
+  margin-bottom: 10px;
+}
+
+.about-us a {
+  color: #80cbc4; /* Soft teal for links */
+  text-decoration: none;
+}
+
+.about-us a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #00695c;  /* Deep teal footer */
+  color: #ffffff;  /* White text in footer */
+  margin-top: 40px;
+}
+
+/* 3D Effects for Button */
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Responsive Design - Mobile and Tablet Breakpoints */
+
+/* Tablets (1024px and below) */
+@media (max-width: 1024px) {
+  #navcontents {
+    font-size: 1.1rem;
+  }
+
+  #appoint button {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-us {
+    max-width: 90%;
+  }
+}
+
+/* Mobile Devices (768px and below) */
+@media (max-width: 768px) {
+  #navcontents {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+    gap: 15px;
+  }
+
+  #appoint {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .about-us {
+    max-width: 95%;
+  }
+
+  #appoint button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  #logo {
+    font-size: 24px;
+  }
+}
+
+/* Very Small Screens (480px and below) */
+@media (max-width: 480px) {
+  #navcontents {
+    font-size: 0.9rem;
+    gap: 10px;
+  }
+
+  #logo {
+    font-size: 22px;
+  }
+
+  #nav {
+    padding: 0 10px;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-us {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  #appoint button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+}
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4; /* Soft light gray background */
+  color: #333; /* Dark gray for text */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation Bar */
+#logo {
+  padding: 30px 60px;
+  height: 100%;
+  width: 20%;
+  font-size: 30px;
+  color: #ffffff; /* White text for logo */
+}
+
+#nav {
+  background-color: #00695c; /* Deep teal for calm, professional look */
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: relative;
+}
+
+#navcontents {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  display: flex;
+  gap: 30px;
+}
+
+#navcontents h5 {
+  color: #ffffff; /* White color for menu items */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#navcontents h5:hover {
+  color: #80cbc4;  /* Soft teal hover effect */
+  transform: translateY(-5px);
+}
+
+#appoint {
+  width: 20%;
+}
+
+#appoint button {
+  padding: 10px 30px;
+  width: 220px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 30px;
+  background-color: #80cbc4; /* Soft teal for buttons */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+#appoint button:hover {
+  transform: translateY(-5px);
+  background-color: #4db6ac;  /* Darker teal for hover */
+}
+
+/* Main Content Section */
+#main-content-about {
+  background-image: url('https://t3.ftcdn.net/jpg/01/95/18/00/360_F_195180025_Yq3C0tsDJ0CCSol0mvy0Wsa3farQGwme.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.header {
+  background-color: #00695c; /* Deep teal for header */
+  color: #ffffff; /* White text */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.about-us {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for content */
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333; /* Dark text for headings */
+}
+
+.about-us p, .about-us ul {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555; /* Slightly lighter color for paragraphs */
+}
+
+.about-us ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about-us li {
+  margin-bottom: 10px;
+}
+
+.about-us a {
+  color: #80cbc4; /* Soft teal for links */
+  text-decoration: none;
+}
+
+.about-us a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #00695c;  /* Deep teal footer */
+  color: #ffffff;  /* White text in footer */
+  margin-top: 40px;
+}
+
+/* 3D Effects for Button */
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Responsive Design - Mobile and Tablet Breakpoints */
+
+/* Tablets (1024px and below) */
+@media (max-width: 1024px) {
+  #navcontents {
+    font-size: 1.1rem;
+  }
+
+  #appoint button {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-us {
+    max-width: 90%;
+  }
+}
+
+/* Mobile Devices (768px and below) */
+@media (max-width: 768px) {
+  #navcontents {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+    gap: 15px;
+  }
+
+  #appoint {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .about-us {
+    max-width: 95%;
+  }
+
+  #appoint button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  #logo {
+    font-size: 24px;
+  }
+}
+
+/* Very Small Screens (480px and below) */
+@media (max-width: 480px) {
+  #navcontents {
+    font-size: 0.9rem;
+    gap: 10px;
+  }
+
+  #logo {
+    font-size: 22px;
+  }
+
+  #nav {
+    padding: 0 10px;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-us {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  #appoint button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+}
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4; /* Soft light gray background */
+  color: #333; /* Dark gray for text */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation Bar */
+#logo {
+  padding: 30px 60px;
+  height: 100%;
+  width: 20%;
+  font-size: 30px;
+  color: #ffffff; /* White text for logo */
+}
+
+#nav {
+  background-color: #00695c; /* Deep teal for calm, professional look */
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: relative;
+}
+
+#navcontents {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  display: flex;
+  gap: 30px;
+}
+
+#navcontents h5 {
+  color: #ffffff; /* White color for menu items */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#navcontents h5:hover {
+  color: #80cbc4;  /* Soft teal hover effect */
+  transform: translateY(-5px);
+}
+
+#appoint {
+  width: 20%;
+}
+
+#appoint button {
+  padding: 10px 30px;
+  width: 220px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 30px;
+  background-color: #80cbc4; /* Soft teal for buttons */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+#appoint button:hover {
+  transform: translateY(-5px);
+  background-color: #4db6ac;  /* Darker teal for hover */
+}
+
+/* Main Content Section */
+#main-content-about {
+  background-image: url('https://t3.ftcdn.net/jpg/01/95/18/00/360_F_195180025_Yq3C0tsDJ0CCSol0mvy0Wsa3farQGwme.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.header {
+  background-color: #00695c; /* Deep teal for header */
+  color: #ffffff; /* White text */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.about-us {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for content */
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333; /* Dark text for headings */
+}
+
+.about-us p, .about-us ul {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555; /* Slightly lighter color for paragraphs */
+}
+
+.about-us ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about-us li {
+  margin-bottom: 10px;
+}
+
+.about-us a {
+  color: #80cbc4; /* Soft teal for links */
+  text-decoration: none;
+}
+
+.about-us a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #00695c;  /* Deep teal footer */
+  color: #ffffff;  /* White text in footer */
+  margin-top: 40px;
+}
+
+/* 3D Effects for Button */
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Responsive Design - Mobile and Tablet Breakpoints */
+
+/* Tablets (1024px and below) */
+@media (max-width: 1024px) {
+  #navcontents {
+    font-size: 1.1rem;
+  }
+
+  #appoint button {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-us {
+    max-width: 90%;
+  }
+}
+
+/* Mobile Devices (768px and below) */
+@media (max-width: 768px) {
+  #navcontents {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+    gap: 15px;
+  }
+
+  #appoint {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .about-us {
+    max-width: 95%;
+  }
+
+  #appoint button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  #logo {
+    font-size: 24px;
+  }
+}
+
+/* Very Small Screens (480px and below) */
+@media (max-width: 480px) {
+  #navcontents {
+    font-size: 0.9rem;
+    gap: 10px;
+  }
+
+  #logo {
+    font-size: 22px;
+  }
+
+  #nav {
+    padding: 0 10px;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-us {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  #appoint button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+}

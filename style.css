@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e6f7f3;
+  color: #4f4f4f;
+  font-size: 16px;
+}
+
+/* Navigation Bar */
+#nav {
+  background-color: #4f9f8b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+#logo {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#navcontents {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  flex-grow: 1;
+  margin-right: 50px;
+}
+
+#navcontents a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#navcontents a:hover {
+  background-color: #fff;
+  color: #4f9f8b;
+  border-radius: 5px;
+}
+
+#appoint button {
+  background-color: #4f9f8b;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#appoint button a {
+  text-decoration: none;
+  color: white;
+}
+
+#appoint button:hover {
+  background-color: #3e7a67;
+  transform: translateY(-5px);
+}
+
+/* Hero Section */
+#herosection {
+  background-image: url('https://wallpapercave.com/wp/wp8423168.jpg');
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 40px;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#hero-content {
+  padding: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#hero-content h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+#health {
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+#buttom a {
+  text-decoration: none;
+}
+
+#Discover {
+  background-color: #f4a261;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+#Discover:hover {
+  background-color: #e76f51;
+  transform: translateY(-5px);
+}
+
+/* Footer Section */
+#ending {
+  background-color: #333;
+  color: white;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#ending h2, #lower-three h3 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+#lower-one, #lower-two, #lower-three {
+  width: 30%;
+  margin: 0 10px;
+  padding: 20px;
+  background-color: #444;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 2rem;
+}
+
+#social i {
+  color: white;
+  cursor: pointer;
+}
+
+#social i:hover {
+  color: #f4a261;
+}
+
+#departmentcontent {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+#departmentcontent ul {
+  list-style: none;
+}
+
+#lower-three p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#copyright {
+  background-color: #333;
+  text-align: center;
+  padding: 15px 0;
+  color: #ccc;
+}
+
+#copy {
+  font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  #navcontents {
+    font-size: 16px;
+  }
+
+  #hero-content h2 {
+    font-size: 2.5rem;
+  }
+
+  #health {
+    font-size: 2rem;
+  }
+
+  #lower-one, #lower-two, #lower-three {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #social {
+    font-size: 1.5rem;
+  }
+
+  #Discover {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  #copy {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #navcontents {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navcontents a {
+    padding: 10px;
+  }
+
+  #hero-content h2 {
+    font-size: 2rem;
+  }
+
+  #health {
+    font-size: 1.8rem;
+  }
+
+  #lower-one, #lower-two, #lower-three {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  #social {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  #Discover {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  #copy {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #navcontents {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navcontents a {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  #hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  #health {
+    font-size: 1.6rem;
+  }
+
+  #lower-one, #lower-two, #lower-three {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  #social {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  #Discover {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  #copy {
+    font-size: 0.75rem;
+  }
+}

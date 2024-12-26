@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor On Demand</title>
+    <link rel="stylesheet" href="bookappointment.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+  <div id="nav">
+    <div id="logo"><i class="ri-nurse-fill"></i>DocOnDemand</div>
+    <div id="navcontents">
+      <h5><a href="index.html">Home</a></h5>
+      <h5><a href="about.html">About</a></h5>
+      <h5><a href="blog.html">Blog</a></h5>
+      <h5><a href="askai.html">Ask Ai</a></h5>
+      <h5><a href="contact.html">Contact</a></h5>
+    </div><div id="appoint">
+    <button><a href="bookappointment.html">Book Appointment</a></button>
+  </div>
+  </div>
+
+  <div id="content-main-main">
+<header class="header">
+        <h1>Doctor On Demand</h1>
+        <p>AI-powered healthcare at your fingertips.</p>
+    </header>
+
+
+
+    <section class="symptom-analysis">
+        <h2>AI Symptom Analysis</h2>
+        <p>Describe your symptoms, and our AI will provide a preliminary analysis.</p>
+        <textarea id="symptomsInput" rows="4" placeholder="Enter your symptoms here..."></textarea>
+        <button id="analyzeButton">Analyze Symptoms</button>
+        <p id="aiResponse"></p>
+    </section>
+
+
+    <section class="appointment-booking">
+        <h2>Book an Appointment</h2>
+        <form id="bookingForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age</label>
+            <input type="age" id="age" name="age" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="appointmentDate">Preferred Date</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+            <label for="appointmentTime">Preferred Time</label>
+            <input type="time" id="appointmentTime" name="appointmentTime" required>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+        <p id="bookingConfirmation"></p>
+    </section>
+ 
+
+    <footer class="footer">
+        <p>&copy; 2024 Doctor On Demand. All rights reserved.</p>
+    </footer>
+  </div>
+
+    <script src="ai.js"></script>
+</body>
+</html>
